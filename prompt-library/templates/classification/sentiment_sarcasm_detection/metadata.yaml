@@ -1,0 +1,17 @@
+name: sentiment_sarcasm_detection
+version: 1.0.0
+task_type: classification
+categories: [正面, 负面, 中性, 讽刺]
+recommended_model: deepseek-chat
+recommended_temperature: 0
+recommended_max_tokens: 50
+technique: few-shot
+benchmarks:
+  - dataset: 10-case internal test set
+    accuracy: 1.0
+    date: 2026-04-21
+principles_applied:
+  - representativeness: 例子覆盖4类 + 带转折
+  - diversity: 每类都有例子
+  - boundary: 含讽刺边界例子
+author: melody
