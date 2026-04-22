@@ -1,0 +1,13 @@
+name: contract_clause_extraction
+version: 1.0.0
+task_type: extraction
+recommended_model: deepseek-chat
+recommended_temperature: 0
+use_json_mode: true
+techniques: [role, xml, few-shot, action-trigger, injection-defense]
+benchmarks:
+  - dataset: internal-5cases
+    field_accuracy: 1.0
+    injection_defense: 1.0
+    date: 2026-04-22
+author: melody
